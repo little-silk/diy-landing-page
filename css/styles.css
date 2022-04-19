@@ -2,14 +2,84 @@
 
 /* My Styles */
 
+:root {
+    --primary: #C0DCDC;
+    --secondary: #f1f1f1;
+    --secondary-2: #3C5472;
+    --tertiary: #8A97A8;
+}
+
 body {
     font-family: 'Britney-Regular';
-    display: grid;
+    width: 100%;
+    background-color: var(--primary);
+    z-index: -1;
     justify-content: center;
     align-content: center;
     height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--secondary-2);
 }
+  
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  /* image & title */
+  header {
+      display: flex;
+      height: 85vh;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  h1 {
+      position: absolute;
+      font-size: 10em;
+      /*put it in front */
+      z-index: 3;
 
-img {
-    width: 70vw;
-}
+      display: flex;
+      flex-direction: row;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+
+  .banner {  
+    width: 80%;
+    height: 50%;
+    display: block;
+    top: 50px;
+    left: 50px;
+      position: relative;
+      border-radius: 10px;
+  }
+
+  .banner::before {
+    position: absolute;
+    content: "";
+    top: 50px;
+    left: 50px;
+    width: 80%;
+    height: 50%;
+    background-color: var(--secondary);
+    transform-origin: 100% 50%;
+    animation: revealRight 1s cubic-bezier(0.23, 1, 0.75, 1) backwards;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px var(--tertiary);
+  }
+
+  
+  @keyframes revealRight {
+    0% {
+      transform: scaleX(0);
+    }
+    100% {
+      transform: scaleX(1);
+    }
+  }
