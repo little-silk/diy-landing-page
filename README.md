@@ -15,6 +15,7 @@ My DIY Landing Page with these features.
 * [Britney font via Font Share](https://www.fontshare.com/fonts/britney)
 * [Satoshi font via Font Share](https://www.fontshare.com/fonts/satoshi)
 * [Animation on background](https://codepen.io/kathykato/pen/MqYVOq)
+* [Animation on nav icons](https://codepen.io/kathykato/pen/MqYVOq)
 
 ## Why Does This Exist? 
 Many services offer a single-page-landing. These "web portals" have existed for decades before [Linktree](https://linktr.ee/), [About.Me](https://about.me), [Card](https://carrd.co/), etc.

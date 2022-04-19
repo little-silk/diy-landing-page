@@ -111,5 +111,42 @@ body {
       width: 100vw;
       height: 55vh;
       object-fit: cover;
+  }
 
+  li {
+    height: 256px;
+    width: 256px;
+    list-style: none;
+    fill: var(--secondary-2);
+  }
+
+  li:hover {
+    transform: scale(1.25);
+    transition: background-color 0.5s, transform 0.5s ease-out;
+    fill: var(--primary);
+  }
+
+  .circle:hover {
+    background: var(--secondary-2);
+    border-radius: 100px;
+  }
+  .icons {
+    display: flex;
+    font-size: 0;
+    list-style: none;
+    margin: 0 auto;
+    padding-top: 4rem;
+    text-align: center;
+    width: 70vw;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .icons a, .icons svg {
+    display: block;
+  }
+
+  .icons a {
+    height: 9.6rem;
+    width: 9.6rem;
   }
