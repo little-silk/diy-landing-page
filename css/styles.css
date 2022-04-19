@@ -1,4 +1,5 @@
 @import url('britney.css');
+@import url('satoshi.css');
 
 /* My Styles */
 
@@ -7,6 +8,7 @@
     --secondary: #f1f1f1;
     --secondary-2: #3C5472;
     --tertiary: #8A97A8;
+    --tertiary-2: #E9C7D5;
 }
 
 body {
@@ -31,10 +33,10 @@ body {
       transform: translateX(0);
     }
   }
-  /* image & title */
+
   header {
       display: flex;
-      height: 85vh;
+      height: 45vh;
       justify-content: center;
       align-items: center;
   }
@@ -42,9 +44,7 @@ body {
   h1 {
       position: absolute;
       font-size: 10em;
-      /*put it in front */
       z-index: 3;
-
       display: flex;
       flex-direction: row;
     animation: 1s ease-out 0s 1 slideInFromLeft;
@@ -52,9 +52,9 @@ body {
 
   .banner {  
     width: 80%;
-    height: 50%;
+    height: 80%;
     display: block;
-    top: 50px;
+    top: 25px;
     left: 50px;
       position: relative;
       border-radius: 10px;
@@ -63,10 +63,10 @@ body {
   .banner::before {
     position: absolute;
     content: "";
-    top: 50px;
+    top: 25px;
     left: 50px;
     width: 80%;
-    height: 50%;
+    height: 80%;
     background-color: var(--secondary);
     transform-origin: 100% 50%;
     animation: revealRight 1s cubic-bezier(0.23, 1, 0.75, 1) backwards;
@@ -82,4 +82,17 @@ body {
     100% {
       transform: scaleX(1);
     }
+  }
+
+  p {
+      font-family: 'Satoshi-Regular';
+      width: 50vw;
+      font-size: 1.5em;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      background-color: var(--tertiary-2);
+      border-radius: 10px;
+      padding: 30px;
   }
