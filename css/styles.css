@@ -84,9 +84,17 @@ body {
     }
   }
 
+  main {
+      display: flex;
+      flex-direction: row;
+      margin-left: 50px;
+      margin-right: 50px;
+      gap: 50px;
+  }
+
   p {
       font-family: 'Satoshi-Regular';
-      width: 50vw;
+      height: 50vh;
       font-size: 1.5em;
       text-align: left;
       display: flex;
@@ -95,4 +103,13 @@ body {
       background-color: var(--tertiary-2);
       border-radius: 10px;
       padding: 30px;
+      line-height: 31px;
+  }
+
+  img {
+      border-radius: 10px;
+      width: 100vw;
+      height: 55vh;
+      object-fit: cover;
+
   }
